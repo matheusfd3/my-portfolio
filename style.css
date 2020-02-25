@@ -35,9 +35,181 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
 .content {
   width: 100%;
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 3rem;
+}
+
+/*  NAV --------------------------------------------------------------------- */
+
+header nav {
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+}
+
+header nav .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+header nav .content ul {
+  display: flex;
+  height: 100%;
+}
+
+header nav .content ul li {
+  display: flex;
+  position: relative;
+  padding: 0 1.5rem;
+}
+
+header nav .content ul li.active::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #3BB9E3;
+}
+
+header nav .content ul li a {
+  display: flex;
+  align-items: center;
+}
+
+header nav .content ul li a span {
+  color: #667580;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/*  WRAPPER SECTION --------------------------------------------------------- */
+
+section div.content {
+  display: flex;
+}
+
+section .content aside {
+  width: 25%;
+}
+
+section .content section {
+  width: 75%;
+}
+
+/*  ASIDE ------------------------------------------------------------------- */
+
+section .content aside img.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: solid 5px #fff;
+  margin-top: -6rem;
+}
+
+section .content aside h1 {
+  font-size: 2rem;
+  color: #1f2226;
+  margin-top: 1rem;
+}
+
+section .content aside p {
+  font-size: 1.4rem;
+  color: #1f2226;
+  margin-top: 1.5rem;
+}
+
+section .content aside ul {
+  margin-top: 2rem;
+}
+
+section .content aside ul li {
+  font-size: 1.4rem;
+  color: #657786;
+
+  display: flex;
+  align-items: center;
+  margin-top: .5rem;
+}
+
+section .content aside ul li:first-child {
+  margin-top: 0;
+}
+
+section .content aside ul li img {
+  margin-right: 1rem;
+}
+
+section .content aside .widget {
+  margin-top: 2rem;
+}
+
+section .content aside .widget span {
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+section .content aside .widget span img {
+  margin-right: .5rem;
+}
+
+section .content aside .social-media ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+section .content aside .social-media ul li {
+  width: 45px;
+  height: 45px;
+  background-color: #D0D5D9;
+  border-radius: 50%;
+  margin: 0 1rem 1rem 0;
+}
+
+section .content aside .social-media ul li a {
+  width: 100%;
+  height: 100%;
+}
+
+section .content aside .social-media ul li.github {
+  background-image: url('./images/github.png');
+  background-position: center;
+  background-size: 60px;
+  background-repeat: no-repeat;
+}
+
+section .content aside .social-media ul li.linkedin {
+  background-image: url('./images/linkedin.png');
+  background-position: center;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-color: #0177b7;
+}
+
+section .content aside .social-media ul li.gmail {
+  background-image: url('./images/gmail.png');
+  background-position: center;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+/*  SECTION ----------------------------------------------------------------- */
+
+section .content section {
+  background-color: #fff;
+  margin: 1rem 2rem 0;
 }
