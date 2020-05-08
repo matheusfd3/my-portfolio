@@ -57,13 +57,13 @@ header nav {
 header nav .content {
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 100%;
 }
 
 header nav .content ul {
   display: flex;
   height: 100%;
+  padding-left: 25%;
 }
 
 header nav .content ul li {
@@ -207,9 +207,17 @@ section .content aside .social-media ul li.gmail {
   background-color: #fff;
 }
 
+section .content aside .social-media ul li.cv {
+  background-image: url('./images/cv.jpg');
+  background-position: center;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
 /*  SECTION ----------------------------------------------------------------- */
 
 section .content section {
   background-color: #fff;
-  margin: 1rem 2rem 0;
+  margin-top: 1rem;
 }
